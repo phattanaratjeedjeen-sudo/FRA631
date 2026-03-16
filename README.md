@@ -98,5 +98,5 @@ To make desired path not too close to the manipulator
 </table>
 
 where
-- right side: task space
-- left side: joint space 
+- right side: joint space
+- left side: task space 
