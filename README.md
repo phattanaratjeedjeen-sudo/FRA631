@@ -1,4 +1,5 @@
 # MIDTERM 
+Phattanarat Jeedjeen 68340700410
 
 ## How to use this package
 >Note: This package was test on ros2 humble 
@@ -33,12 +34,12 @@
     # On new terminal
     ros2 param set /task_space/arm task tri
     ```
-    Or viseversa also available
+    Or vice versa also available
 
 ## DH Parameter
 
 <p align="center">
-  <img src="./images/DH.jpeg" width="100%"/>
+  <img src="./images/axis.png" width="100%"/>
 </p>
 
 
@@ -63,15 +64,10 @@ where
 
 <table align="center">
   <tr>
-    <td align="center" width="50%">
-      <img src="./images/strl.png" width="100%"/>
+    <td align="center" width="100%">
+      <img src="./images/tria.gif" width="100%"/>
       <br>
-      <em>Trajectory Comparison</em>
-    </td>
-    <td align="center" width="45%">
-      <img src="./media/wind_strl_2d.gif" width="100%"/>
-      <br>
-      <em>Wind Simulation</em>
+      <em></em>
     </td>
   </tr>
 </table>
@@ -80,15 +76,10 @@ where
 
 <table align="center">
   <tr>
-    <td align="center" width="50%">
-      <img src="./images/strl.png" width="100%"/>
+    <td align="center" width="100%">
+      <img src="./images/rec.gif" width="100%"/>
       <br>
-      <em>Trajectory Comparison</em>
-    </td>
-    <td align="center" width="45%">
-      <img src="./media/wind_strl_2d.gif" width="100%"/>
-      <br>
-      <em>Wind Simulation</em>
+      <em></em>
     </td>
   </tr>
 </table>
