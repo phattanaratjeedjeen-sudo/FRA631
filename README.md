@@ -56,10 +56,23 @@ where
 - $L_0$ = 0.1 m
 - $L_1$ = 0.6 m
 - $L_2$ = 0.8 m
+
 ## Example Trajectory Calculation
 
+**Shift position**
+
+To make desired path not too close to the manipulator
+
+<p align="center">
+  <img src="./images/shift.png" width="100%"/>
+</p>
+
+<p align="center">
+  <img src="./images/ex.png" width="100%"/>
+</p>
 
 ## Result
+
 **Triangle**
 
 <table align="center">
@@ -83,3 +96,7 @@ where
     </td>
   </tr>
 </table>
+
+where
+- right side: task space
+- left side: joint space 

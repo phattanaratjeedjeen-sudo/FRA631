@@ -15,16 +15,16 @@ L1 = 0.6
 L2 = 0.8
 
 tria = np.array([
-    [0.0, 1.1, 0.2],   # A
-    [-0.4, 0.5, 0.2],  # B
-    [0.4, 0.5, 0.2]    # C
+    [0.0, 0.9, 0.2],   # A
+    [-0.4, 0.3, 0.2],  # B
+    [0.4, 0.3, 0.2]    # C
 ])
 
 rec = np.array([
-    [-0.6, 0.8, 0.2],  # A
-    [0.6, 0.8, 0.2],   # B
-    [0.6, 0.5, 0.2],   # C
-    [-0.6, 0.5, 0.2],  # D
+    [-0.6, 0.6, 0.2],  # A
+    [0.6, 0.6, 0.2],   # B
+    [0.6, 0.3, 0.2],    # C
+    [-0.6, 0.3, 0.2],  # D
 ])
 
 class ArmNode(Node):
@@ -89,11 +89,10 @@ class ArmNode(Node):
         if self.trajectory is None and not self.trajectory_computing:
             self.trajectory_computing = True
             try:
-                # Get SE3 poses for start and goal
                 T_start = self.robot.fkine(self.q)
                 T_goal = SE3(task[next_point])
                 
-                # Generate Cartesian trajectory (50 poses interpolated with cubic polynomial)
+                # Generate Cartesian trajectory
                 cartesian_traj = rtb.ctraj(T_start, T_goal, 50)
                 
                 # Solve IK for each Cartesian pose
